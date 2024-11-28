@@ -1,0 +1,28 @@
+
+header{
+    background-color: deepskyblue;
+    padding: 50px;
+    font-size: 30px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.main{
+    display: flex;
+    justify-content: space-between;
+}
+
+aside{
+    background-color: green;
+}
+
+ul{
+    list-style: "- ";
+}
+
+footer{
+    background-color: coral;
+    text-align: center;
+    font-size: 20px;
+    padding: 50px;
+}
