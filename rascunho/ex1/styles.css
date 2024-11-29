@@ -1,28 +1,116 @@
 
-header{
-    background-color: deepskyblue;
-    padding: 50px;
-    font-size: 30px;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.principal{
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
 
 }
-.main{
+
+header{
+    background-color: #9ad8ff;
+    /*Aproveitar toda a largura da pagina*/
+    width: 100%;
+
+    /*Tornar o container flexivel e colocando os objetos lado a lado*/
     display: flex;
+    /*Deixando eles na extremidade*/
     justify-content: space-between;
+    /*Aumentar o */
+    padding: 50px;
+
+    /*Mudar o tamanho da font*/
+    font-size: 20px;
+
+}
+
+nav{
+    display: flex;
+    /*Espaços entre os elementos da nav*/
+    gap: 20px;
+}
+
+.main{
+    /*Alinhar as coisas ao lado*/
+    display: flex;
+    /*Definir o espaço*/
+    gap: 10px;
+}
+
+section{
+    /*Alinhar os itens lado a lado*/
+    display: flex;
+    /*Realizar a quebra de linha*/
+    flex-wrap: wrap;
+    /*Espaço entre os elementos*/
+    gap: 30px;
+    /*Preenchimento ao redor*/
+    /*Melhor usar assim*/
+    padding: 5vw 5vw 0vw 5vw;
+    margin-bottom: 0%;
+}
+
+article{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+a {
+    color: black;
+    text-decoration: none; /* Remove o sublinhado */
+}
+
+article a {
+    color: blue;
 }
 
 aside{
-    background-color: green;
+    font-size: 20px;
+    background-color: #39f78f;
+    padding: 30px;
+
 }
 
 ul{
     list-style: "- ";
+    padding: 10px;
+    margin-top: 10px;
 }
 
+.paginas a{
+    color: blue;
+}
+
+.paginas{
+    font-size: 18px;
+    display: flex;
+    gap: 25px;
+    margin-bottom: 20px;
+    width: 100%;
+    justify-content: center;
+}
+
+
+
 footer{
-    background-color: coral;
+    background-color: #ffa268;
+    width: 100%;
+    padding: 40px;
     text-align: center;
     font-size: 20px;
-    padding: 50px;
 }
+
+.principalOutro{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+
+
