@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 50%;
+}
+
+.perfil{
+    width: 40%;
+    padding-top: 37%;
+    padding-bottom: 3%;
+    text-align: right;
+    background-image: url(img/perfil.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    line-height: 200%;
+}
+
+.ids{
+    margin-right: 1%;
+}
+
+.perfil h1{
+    color: rgb(2, 105, 2);
+    font-size: 75px;
+}
+
+.perfil p{
+    color: white;
+    font-size: 30px;
+}
+
+.infos{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.text-infos{
+    padding: 30px;
+    background-color: gray;
+}
+
+.text-infos h2{
+    font-size: 50px;
+}
+
+.sobre-mim{
+    padding-top: 70px;
+    font-size: 20px;
+}
