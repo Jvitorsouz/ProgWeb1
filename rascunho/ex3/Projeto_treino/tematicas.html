@@ -5,18 +5,19 @@
     <!--width: largura para se adaptar ao dispositivo-->
     <!--initial-scale: definido como 1.0 para não iniciar com zoom-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <title>Programação para Web I</title>
 </head>
 <body>
-    <header>
-        <a href="index.html">Programação para Web I</a>
-        <nav>
-            <button>Abrir/fechar menu</button>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="sobre.html">Sobre Programação para Web I</a></li>
-                <li><a href="tematicas.html">Temáticas</a></li>
-                <li><a href="contatos.html">Contato</a></li>
+    <header class="cabecalho">
+        <h1 class="logo">Programação para web I</h1>
+        <nav class="menu-principal">
+            <button class="menu-principal__btn">Abrir/fechar Menu</button>
+            <ul class="menu-principal__lista">
+                <li class="menu-principal__item"><a href="index.html">Home</a></li>
+                <li class="menu-principal__item--atual"><a href="sobre.html">Sobre Programação para Web I</a></li>
+                <li class="menu-principal__item"><a href="tematicas.html">Temáticas</a></li>
+                <li class="menu-principal__item"><a href="contatos.html">Contato</a></li>
             </ul>
         </nav>
     </header>
@@ -32,74 +33,74 @@
                 Responsividade: Design adaptável para diferentes dispositivos e tamanhos de tela.
             </p>
             <nav>
-                <ul>
-                    <li>
+                <ul class="lista-tematicas">
+                    <li class="lista-tematicas__item">
                         <a href="img/html.png">
                             <img src="img/html.png" alt="html">
-                            <h2>HTML</h2>
+                            <h2 class="lista-tematicas__titulo">HTML</h2>
                         </a>
                     </li>
-                    <li>
+                    <li class="lista-tematicas__item">
                         <a href="img/css.png">
                             <img src="img/css.png" alt="css">
-                            <h2>CSS</h2>
+                            <h2 class="lista-tematicas__titulo">CSS</h2>
                         </a>
                     </li>
-                    <li>
+                    <li class="lista-tematicas__item">
                         <a href="img/javascript.png">
                             <img src="img/javascript.png" alt="javascript">
-                            <h2>JAVASCRIPT</h2>
+                            <h2 class="lista-tematicas__titulo">JAVASCRIPT</h2>
                         </a>
                     </li>
-                    <li>
+                    <li class="lista-tematicas__item">
                         <a href="img/dom.png">
                             <img src="img/dom.png" alt="dom">
-                            <h2>DOM</h2>
+                            <h2 class="lista-tematicas__titulo">DOM</h2>
                         </a>
                     </li>
-                    <li>
+                    <li class="lista-tematicas__item">
                         <a href="img/sass.png">
                             <img src="img/sass.png" alt="sass">
-                            <h2>SASS</h2>
+                            <h2 class="lista-tematicas__titulo">SASS</h2>
                         </a>
                     </li>
-                    <li>
+                    <li class="lista-tematicas__item">
                         <a href="img/ajax.png">
                             <img src="img/ajax.png" alt="ajax">
-                            <h2>AJAX</h2>
+                            <h2 class="lista-tematicas__titulo">AJAX</h2>
                         </a>
                     </li>
                 </ul>
             </nav>
         </section>
     </main>
-    <footer>
-        <div>
-            <div>
+    <footer class="rodape">
+        <div class="rodape__linha-1">
+            <div class="rodape_coluna">
                 <a href="index.html">Programação para Web I</a>
                 <p>O objetivo geral do curso é proporcionar ao estudante uma introdução às linguagens e tecnologias fundamentais da web (frontend): HTML, CSS, JavaScript, HTTP e o browser.</p>
             </div>
-            <div>
-                <h2>Informações Gerais</h2>
-                <ul>
-                    <li><a href="https://www.computacao.ufcg.edu.br/unidade-acad%C3%AAmica">Unidade Acadêmica</a></li>
-                    <li><a href="https://www.computacao.ufcg.edu.br/graduacao">Graduação</a></li>
-                    <li><a href="https://www.computacao.ufcg.edu.br/mestrado-e-doutorado">Pós-Graduação</a></li>
-                    <li><a href="https://www.computacao.ufcg.edu.br/serviços">Serviços</a></li>
+            <div class="rodape_coluna">
+                <h2 class="rodape__titulo">Informações Gerais</h2>
+                <ul class="rodape__lista-links">
+                    <li class="rodape__lista-links__item"><a href="https://www.computacao.ufcg.edu.br/unidade-acad%C3%AAmica">Unidade Acadêmica de Sistemas e Computação</a></li>
+                    <li class="rodape__lista-links__item"><a href="https://www.computacao.ufcg.edu.br/graduacao">Graduação</a></li>
+                    <li class="rodape__lista-links__item"><a href="https://www.computacao.ufcg.edu.br/mestrado-e-doutorado">Pós-Graduação</a></li>
+                    <li class="rodape__lista-links__item"><a href="https://www.computacao.ufcg.edu.br/servi%C3%A7os">Serviços</a></li>
                 </ul>
             </div>
-            <div>
-                <h2>Links</h2>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="sobre.html">Sobre Programação para Web I</a></li>
-                    <li><a href="tematicas.html">Temáticas</a></li>
-                    <li><a href="contato.html">Contato</a></li>
+            <div class="rodape_coluna">
+                <h2 class="rodape__titulo">Links</h2>
+                <ul class="rodape__lista-links">
+                    <li class="rodape__lista-links__item"><a href="index.html">Home</a></li>
+                    <l class="rodape__lista-links__item"><a href="sobre.html">Sobre Programação para Web I</a></li>
+                    <li class="rodape__lista-links__item"><a href="tematicas.html">Temáticas</a></li>
+                    <li class="rodape__lista-links__item"><a href="contatos.html">Contato</a></li>
                 </ul>
             </div>
         </div>
-        <div>
-            2024 - Todos os direitos reservados PW
+        <div class="rodape__linha-2">
+            <p>Todos os direitos reservados PW.</p>
         </div>
     </footer>
 </body>

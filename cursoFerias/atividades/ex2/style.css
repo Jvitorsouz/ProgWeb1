@@ -1,0 +1,24 @@
+body{
+    margin: 0px 200px 0px 200px;
+}
+
+.post-container{
+    background-color: #fffafa;
+}
+
+.post{
+    padding: 20px 50px 10px 30px;
+}
+
+h1{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.date{
+    font-family: 'Roboto', sans-serif;
+    color: #008080;
+}
+
+.post-content{
+    font-family: 'Open Sans', sans-serif;
+}

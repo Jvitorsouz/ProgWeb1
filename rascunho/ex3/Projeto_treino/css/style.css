@@ -120,4 +120,69 @@ body{
 }
 
 
+.pagina-cabecalho{
+    background-color: #dd3f3f;
+    background-image: url(../../img_faltantes/cabecalho-pagina-bg.jpg);
+    background-attachment: fixed;
+    color: #fff;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
 
+.pagina-cabecalho_titulo{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.pagina-cabecalho_titulo::after{
+    content: ' ';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: #fff;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.pagina-conteudo{
+    padding: 15px;
+    padding-top: 20px;
+    padding-bottom: 25px;
+}
+
+.pagina-conteudo p{
+    color: #3a3a3a;
+    line-height: 22px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.lista-tematicas{
+    list-style: none;
+    padding: 0;
+}
+
+.lista-tematicas__item{
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.lista-tematicas__item a{
+    text-decoration: none;
+}
+
+.lista-tematicas__titulo{
+    color: #000;
+    font-size: 18px;
+    margin-left: 15px;
+    border-left: 1px solid #000;
+}
