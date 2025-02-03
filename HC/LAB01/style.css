@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #9ad8ff;
+    height: 130px;
+    padding: 50px;
+    font-size: 25px;
+}
+
+header a{
+    text-decoration: none;
+    color: black;
+    margin-right: 10px;
+}
+
+.content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.principal-content{
+    width: 80%;
+    margin: 70px auto;
+}
+
+aside{
+    background-color: #3bff94;
+}
+
+aside ul{
+    list-style: "-" inside;
+    padding: 10px;
+}
+
