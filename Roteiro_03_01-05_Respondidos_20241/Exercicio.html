@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>EXericico</title>
+</head>
+<body>
+    <h2 id="titulo">Clique em uma das opções</h2>
+    <div id="menu" class="content">
+        <div class="buttons">
+            <input  class="btn" type="button" value="Calcular Quadrados!" onclick="mostrarOperacao('Q1')">
+            <input class="btn" type="button" value="Encontra maior número" onclick="mostrarOperacao('Q2')">
+            <input class="btn" type="button" value="Maiores e menores que 18 anos" onclick="mostrarOperacao('Q3')">
+            <input class="btn" type="button" value="Separar dia, mês e ano." onclick="mostrarOperacao('Q4')">
+            <input class="btn" type="button" value="Inverter texto" onclick="mostrarOperacao('Q5')">
+            <input class="btn" type="button" value="Ordenar Lista" onclick="mostrarOperacao('Q6')">
+            <input class="btn"type="button" value="Somar Multiplos de 3" onclick="mostrarOperacao('Q7')">
+            <input class="btn" type="button" value="Calcular Fatorial" onclick="mostrarOperacao('Q8')">
+            <input class="btn" type="button" value="Informações da lista de valores" onclick="mostrarOperacao('Q9')">
+            <input class="btn" type="button" value="Inverter lista" onclick="mostrarOperacao('Q10')">
+        </div>
+    </div>
+
+    <div id="Q1" class="content operacao">
+        <div class="input">
+            <h2>Digte os Números: </h2>
+            <input class="btn input_op" type="text" id="txt1">
+            <input class="btn" type="button" value="Enter" onclick="calcularQuadrados()">
+            <button class = "btn" onclick="voltarMenu()">Voltar</button>
+        </div>
+    </div>
+
+    <div id="Q2" class="content operacao">
+        <div class="input">
+            <h2>Digite os Números </h2>
+            <input class="btn input_op" type="text" id="txt2">
+            <input class="btn" type="button" value="Enter" onclick="verificarMaior()">
+            <button class = "btn" onclick="voltarMenu()">Voltar</button>
+        </div>
+    </div>
+
+    <div id="Q3" class="content operacao">
+        <div class="input">
+            <h2>Digte os Números: </h2>
+            <input class="btn input_op" type="text" id="txt3">
+            <input class="btn" type="button" value="Enter" onclick="verificarIdadesMaiorMenor18()">
+            <button class = "btn" onclick="voltarMenu()">Voltar</button>
+        </div>
+    </div>
+
+    <div id="Q4" class="content operacao">
+        <div class="input">
+            <h2>Digte a Data: </h2>
+            <input class="btn input_op" type="text" id="txt4">
+            <input class="btn" type="button" value="Enter" onclick="separarDiaMesAno()">
+            <button class = "btn" onclick="voltarMenu()">Voltar</button>
+        </div>
+    </div>
+
+    <div id="Q5" class="content operacao">
+        <div class="input">
+            <h2>Digte o texto: </h2>
+            <input class="btn input_op" type="text" id="txt5">
+            <input class="btn" type="button" value="Enter" onclick="inverterTexto()">
+            <button class = "btn" onclick="voltarMenu()">Voltar</button>
+        </div>
+    </div>
+
+
+
+    <div id="Q6" class="content operacao">
+        <div class="input">
+            <h2>Digte os Números: </h2>
+            <input class="btn input_op" type="text" id="txt6">
+            <input class="btn" type="button" value="Enter" onclick="ordenarLista()">
+            <button class = "btn" onclick="voltarMenu()">Voltar</button>
+        </div>
+    </div>
+
+
+    <div id="Q7" class="content operacao">
+        <div class="input">
+            <h2>Digite os Números: </h2>
+            <input class="btn input_op" type="text" id="txt7">
+            <input class="btn" type="button" value="Enter" onclick="multiplosTres()">
+            <button class = "btn" onclick="voltarMenu()">Voltar</button>
+        </div>
+    </div>
+
+
+    <div id="Q8" class="content operacao">
+        <div class="input">
+            <h2>Digte os Números: </h2>
+            <input class="btn input_op" type="text" id="txtValores">
+            <input class="btn" type="button" value="Enter" onclick="calcularFatorial()">
+            <button class = "btn" onclick="voltarMenu()">Voltar</button>
+        </div>
+    </div>
+
+
+    <div id="Q9" class="content operacao">
+        <div class="input">
+            <h2>Digte os Números: </h2>
+            <input class="btn input_op" type="text" id="txt9">
+            <input class="btn" type="button" value="Enter" onclick="infos()">
+            <button class = "btn" onclick="voltarMenu()">Voltar</button>
+        </div>
+    </div>
+
+
+    <div id="Q10" class="content operacao">
+        <div class="input">
+            <h2>Digte os Números: </h2>
+            <input class="btn input_op" type="text" id="txt10">
+            <input class="btn" type="button" value="Enter" onclick="reverteLista()">
+            <button class = "btn" onclick="voltarMenu()">Voltar</button>
+        </div>
+    </div>
+
+
+
+
+
+    
+</body>
+</html>
