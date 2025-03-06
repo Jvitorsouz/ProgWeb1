@@ -1,22 +1,26 @@
 const numeros = [23, 8, 15, 42, 4, 16]
 
 const processarDados = (listaNums) => {
-    console.log(calculaMedia(listaNums))
+    const {maior, menor} = verificaMaiorMenor(listaNums)
+    return {
+        media: calculaMedia(listaNums),
+        maior,
+        menor,
+        ordenado: ordenador(listaNums)
+    }
 }
 
 const calculaMedia = (lista) => {
     let soma = 0
-    lista.forEach(value => media += value)
-    return soma / lista.lenght
+    lista.forEach(value => soma += value)
+    return soma / lista.length
 }
 
-const verificaMaior = (lista) => {
-    let maior =  menor = parseInt(lista[0])
-
-    for(let i = 1; i<lista.lenght; i++){
+const verificaMaiorMenor = (lista) => {
+    let maior =  menor = lista[0]
+    for(let i = 1; i<lista.length; i++){
         if(lista[i] > maior){
             maior = lista[i]
-            console.log(maior)
         } if(lista[i] < menor){
             menor = lista[i]
         }
@@ -26,10 +30,9 @@ const verificaMaior = (lista) => {
 
 }
 
-
 const ordenador = (lista) => {
-    for(let i = 0; i< lista.lenght; i++){
-        for(let j = i+1; j<lista.lenght; j++){
+    for(let i = 0; i< lista.length; i++){
+        for(let j = i+1; j<lista.length; j++){
             if(lista[j] < lista[i]){
                 let aux = lista[i]
                 lista[i] = lista[j]
@@ -40,4 +43,4 @@ const ordenador = (lista) => {
     return lista
 }
 
-processarDados(numeros)
+console.log(processarDados(numeros))
